@@ -1,0 +1,48 @@
+代码规范，自己必须严格遵守，养成良好的代码习惯。
+
+1，不要在行尾加分号，也不要用分号将代码写在一行
+
+a = [11,22,33,44]
+
+    正确的方式
+    for i in a:
+        print(a)
+    错误的方式
+    for i in a ：print（a）
+
+2,每行不超过80个字符，如果超过用（）[]{}来连接，不要使用\,以下情况除外：长的导入模块语句；查的url
+
+推荐1: foo_bar(self, width, height, color='black', design=None, x='foo',
+             emphasis=None, highlight=0)
+
+         if (width == 0 and height == 0 and
+             color == 'red' and emphasis == 'strong'):
+
+推荐2：x = ('这是一个非常长非常长非常长非常长 '
+           '非常长非常长非常长非常长非常长非常长的字符串')
+
+推荐3：如果有必要url应该放在一行
+       在注释中，如果必要，将长的URL放在一行上。
+    Yes:  # See details at
+          # http://www.example.com/us/developer/documentation/api/content/
+          v2.0/csv_file_name_extension_full_specification.html
+
+3,括号：宁缺毋滥地使用括号
+    除非是用于实现行连接, 否则不要在返回语句或条件语句中使用括号. 不过在元组两边使用括号是可以的
+    Yes: if foo:
+         bar()
+     while x:
+         x = bar()
+     if x and y:
+         bar()
+     if not x:
+         bar()
+     return foo
+     for (x, y) in dict.items(): ..
+
+    No:  if (x):
+             bar()
+         if not(x):
+             bar()
+         return (foo)
+4，缩进
