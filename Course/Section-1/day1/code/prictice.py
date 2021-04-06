@@ -13,24 +13,24 @@ while count < 10:
 
 # 2,求1-100的所有数的和
 
-sum,count1= 0,0
-while count1<100:
-    count1 +=1
-    sum +=count1
-print(sum)
+total, count1 = 0, 0
+while count1 < 100:
+    count1 += 1
+    sum += count1
+print(total)
 
 
 # 3,求1-100内所有奇数
-odd =0
+odd = 0
 while odd < 100:
-    odd +=1
-    if odd%2 ==0:
+    odd += 1
+    if odd % 2 == 0:
         pass
     else:
         print(odd)
 
 # 4,求1-100内所有偶数
-even =0
+even = 0
 while even < 100:
     even += 1
     if even % 2 == 1:
@@ -46,7 +46,7 @@ while count2 < 99:
         total += count2
     else:
         total -= count2
-    print(count2,total)
+    print(count2, total)
 print(total)
 
 # 6,用户登陆（三次机会重试）。
@@ -65,3 +65,4 @@ while count3 < 4:
     else:
         count3 +=1
         print("You only have %s times"%(times-count3))
+
