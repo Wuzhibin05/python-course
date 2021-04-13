@@ -22,7 +22,9 @@
 # D    40-59
 # E    0-39
 
-# 7,用户登陆（三次机会重试）。
+# 7,用户登陆（三次机会重试）
+
+# 8，猜年龄（指定匹配）
 
 # ================================ 答案 =========================================
 # 答案1
@@ -115,3 +117,14 @@
 #     else:
 #         count3 +=1
 #         print("You only have %s times"%(times-count3))
+
+# 答案8
+
+# age = 32
+# guess_age = int(input(">>>:"))
+# if guess_age > age:
+#     print("猜大了")
+# elif guess_age < age:
+#     print("猜小了")
+# else:
+#     print("猜对了")
