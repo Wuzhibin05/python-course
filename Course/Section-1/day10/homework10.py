@@ -38,7 +38,7 @@ print(cal(*list1))
 
 """5,写函数,传入函数中多个实参(均为可迭代对象如字符串,列表,元祖,集合等),将每个实参的每个元素依次添加到函数的动态参数args里面.
      例如:传入函数两个参数[1,2,3] (22,33)最终args为(1,2,3,22,33)"""
-def joindata(*args):
+def  joindata(*args ):
     new_args = []
     for i in range(len(args)):
         if type(i) == set:
@@ -48,7 +48,9 @@ def joindata(*args):
         else:
             for j in range(len(i)):
                new_args.append(i[j])
-list2 = ['abad',{1,2,3,4},(1,'a','cd'),['a','b',1,'ab']]
+
+
+list2 = ['ab', {1, 2, 3, 4}, (1, 'a', 'cd'), ['a', 'b', 1, 'ab']]
 print(joindata(*list2))
 
 # ### 6,写函数,传入函数中多个实参(实参均为字典),将每个实参的键值对依次添加到函数的动态参数kwargs里面.

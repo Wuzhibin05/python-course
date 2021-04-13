@@ -1,5 +1,5 @@
 #and or not
-#优先级，（）> not > and > or
+# 优先级，（）> not > and > or
 # print(2 > 1 and 1 < 4)
 # print(2 > 1 and 1 < 4 or 2 < 3 and 9 > 6 or 2 < 4 and 3 < 2)
 # T or T or F
