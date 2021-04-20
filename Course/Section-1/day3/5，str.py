@@ -45,7 +45,6 @@ s2 = s.upper()
 s21 = s.lower()
 # print(s2,s21)
 
-
 '''
 s_str= 'acEQ1'
 you_input =input('请输入验证码，不区分大小写')
