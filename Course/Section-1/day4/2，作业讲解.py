@@ -31,3 +31,10 @@ for i in s:
     if i.isdigit():
         count += 1
 print(count)
+
+
+info ='''
+A test
+B master
+'''
+print(info)

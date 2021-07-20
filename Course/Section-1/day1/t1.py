@@ -201,7 +201,6 @@ while count <= 100 :
     print("loop ", count)
 
 print("-----out of while loop ------")
-	
 
 
 

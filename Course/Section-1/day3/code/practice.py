@@ -1,11 +1,14 @@
-#!/usr/bin/env python
+#! /usr/bin/env python
 # -*- coding: utf-8 -*-
-# Author:Bruce wu
-# Date: 2019/1/30
+# __author__ = "wu zhi bin"
+# Email: wuzhibin05@163.com
+# Date: 2021/7/16
+
 # 1，有变量name = "aleX leNb" 完成如下操作：
 name = "aleX leNb"
-print(name.strip())
-print(name.lstrip('al'))
+
+print(name.strip())  # 去掉两边空格
+print(name.lstrip('al')) #
 print(name.rstrip("Nb"))
 print(name.rstrip("a"))
 print(name.strip("ab"))
@@ -103,10 +106,14 @@ for i in  s2:
 # 选择游戏厅，则显示 ‘一个半小时到家，爸爸在家，拿棍等你。’并让其重新输入A，B,C选项。
 # 选择网吧，则显示‘两个小时到家，妈妈已做好了战斗准备。’并让其重新输入A，B,C选项。
 
+
+
+
+
 ### 17、等待⽤户输⼊内容，检测⽤户输⼊内容中是否包含敏感字符？如果存在敏感字符提示“存在敏感字符请重新输⼊”，
 # 并允许⽤户重新输⼊并打印。敏感字符：“⼩粉嫩”、“⼤铁锤”
 sensitive_check = 1
-sensitive_list= ["⼩粉嫩","⼤铁锤"]
+sensitive_list = ["⼩粉嫩", "⼤铁锤"]
 while sensitive_check:
     msg = input("请输入你要输入的信息:").strip()
     for i in sensitive_list:

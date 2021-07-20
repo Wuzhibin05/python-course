@@ -15,7 +15,7 @@ dic = {
 # dic['name'][1] = dic['name'][1].upper()
 # print(dic)
 
-#female : 6
+# female : 6
 # dic['py9']['female'] = 6
 # print(dic)
 

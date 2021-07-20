@@ -96,8 +96,8 @@ print(s7)
 # index通过元素找索引，找不到报错
 s = 'alexWUsir'
 s8 = s.find('A')
-s81 = s.index('A')
-print(s81,type(s8))
+s81 = s.index('a')
+print(s81, type(s8))
 
 #strip rstrip lstrip
 # s = 'alexWUsir%'
@@ -142,3 +142,6 @@ print(s81,type(s8))
 s = 'fdsa苍井空fdsalk'
 if '苍井空' in s:
     print('您的评论有敏感词...')
+
+if s.endswith("alk"):
+    print('yes')

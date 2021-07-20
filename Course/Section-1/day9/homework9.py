@@ -94,8 +94,8 @@ def transform(*args):
     """
     dic1 = {}
     if len(args) != 0:
-        for index,i in enumerate(args):
-            dic1[index]= i
+        for index, i in enumerate(args):
+            dic1[index] = i
     return dic1
 print(transform(*lst1))
 
