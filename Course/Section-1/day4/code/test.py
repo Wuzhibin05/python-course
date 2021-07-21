@@ -107,9 +107,10 @@ print(lis)
 # li = ["alex", "eric", "rain"]
 # ```
 # 利用下划线将列表的每一个元素拼接成字符串"alex_eric_rain"
+li = ["alex", "eric", "rain"]
 
 
-### 5，利用for循环和range打印出下面列表的索引。
+# ## 5，利用for循环和range打印出下面列表的索引。
 
 # ```python
 # li = ["alex", "WuSir", "ritian", "barry", "wenzhou"]
