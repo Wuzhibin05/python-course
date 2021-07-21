@@ -82,7 +82,7 @@ s1 = s.strip().split("|")
 dic3 = {}
 for i in s1:
     s2 = i.strip().split(":")
-    dic3[s2[0]]=s2[1]
+    dic3[s2[0]] = s2[1]
 print(dic3)
 
 ### 5、元素分类
@@ -123,7 +123,7 @@ while True:
             print(goods[good_index]["name"],goods[good_index]["price"])
         else:
             print("您的输入有误，请重新输入！".center(80, "*"))
-    elif good_num.upper()=="Q":
+    elif good_num.upper() == "Q":
         break
     else:
         print("您的输入有误，请重新输入！".center(80,"*"))
