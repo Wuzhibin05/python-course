@@ -140,7 +140,7 @@ li10 = []
 msg = input("请输入您的评论:").strip()
 for i in li9:
     if i in msg:
-        msg =msg.replace(i,"*"*len(i))
+        msg =msg.replace(i, "*"*len(i))
 li10.append(msg)
 print(li10)
 
