@@ -222,7 +222,7 @@ staff_dict = {}
 title_list =[]
 value_list = []
 number = 0
-with open('a8.txt', mode='r', encoding='utf-8') as f:
+with open( 'a8.txt' , mode='r', encoding='utf-8' ) as f:
     f.seek(0)
     for line in f:
         if line.strip() !="":

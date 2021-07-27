@@ -118,7 +118,7 @@ goods = [{"name": "电脑", "price": 1999},
          {"name": "游艇", "price": 20},
          {"name": "美女", "price": 998}]
 flag = 1
-for index,value in enumerate(goods):
+for index, value in enumerate(goods):
     print(index, value["name"], value["price"])
 while flag:
     good_num = input("请输入商品编号:")

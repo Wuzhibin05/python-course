@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# Author:Bruce wu
+
 username = input('请输入你要注册的用户名：')
 password = input('请输入你要注册的密码：')
 with open('list_of_info',mode='w',encoding='utf-8') as f:
@@ -14,5 +18,6 @@ while i < 3:
     if usn == lis[0].strip() and pwd == lis[1].strip():
         print('登录成功')
         break
-    else:print('账号和密码错误')
-    i+=1
+    else:
+        print('账号和密码错误')
+    i += 1

@@ -31,7 +31,7 @@ python2 python3
 # print(id(i1),id(i2))
 
 
-#剩下的 list dict tuple set
+# 剩下的 list dict tuple set
 # l1 = [1,]
 # l2 = [1,]
 # print(l1 is l2)
@@ -46,12 +46,12 @@ python2 python3
 # s1 = b'中国'
 # print(s1,type(s1))
 
-# s1 = 'alex'
-# # encode 编码，如何将str --> bytes, ()
-# s11 = s1.encode('utf-8')
-# s11 = s1.encode('gbk')
-# print(s11)
-# s2 = '中国'
-# s22 = s2.encode('utf-8')
-# s22 = s2.encode('gbk')
-# print(s22)
+s1 = 'alex'
+# encode 编码，如何将str --> bytes, ()
+s11 = s1.encode('utf-8')
+s11 = s1.encode('gbk')
+print(s11)
+s2 = '中国'
+s22 = s2.encode('utf-8')
+s22 = s2.encode('gbk')
+print(s22)

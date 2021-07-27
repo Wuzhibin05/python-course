@@ -174,7 +174,7 @@ def modify_file(file,s):
     # 判断文件是否 文件是否存在并替换。
     os.remove(file)
     os.rename(file+".bak",file)
-filename = 'student_msg1.txt'
+filename = '../student_msg1.txt'
 s1= input("请输入你想要修改的内容:").strip()
 modify_file(filename,s1)
 
