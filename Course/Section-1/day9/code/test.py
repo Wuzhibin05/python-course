@@ -71,17 +71,17 @@
 
 
 # 7,写函数，检查传入字典的每一个value的长度,如果大于2，那么仅保留前两个长度的内容，并将新内容返回给调用者。
-# info = {"name":"zhaozhao", "age":"23", "sex":"男"}
-# def check_dict(**kwargs):
-#     info = {}
-#     for key,value in kwargs.items():
-#         if len(value) > 2:
-#             info[key] = value[:2]
-#         else:
-#             info[key] = value
-#     return info
-#
-# print(check_dict(**info))
+info = {"name": "zhaozhao", "age": "23", "sex": "男"}
+def check_dict(**kwargs):
+    info = {}
+    for key,value in kwargs.items():
+        if len(value) > 2:
+            info[key] = value[:2]
+        else:
+            info[key] = value
+    return info
+
+print(check_dict(**info))
 
 
 
