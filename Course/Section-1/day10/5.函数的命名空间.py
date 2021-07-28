@@ -79,40 +79,49 @@
 # 全局作用域 —— 作用在全局 —— 内置和全局名字空间中的名字都属于全局作用域  ——globals()
 # 局部作用域 —— 作用在局部 —— 函数（局部名字空间中的名字属于局部作用域） ——locals()
 
-a = 1
-def func():
-    global a
-    a = 2
-func()
-print(a)
+# a = 1
+# def func():
+#     global a
+#     a = 2
+# func()
+# print(a)
+# li1 = [11,44,232,212]
+# print(max(li1))
 
 # 对于不可变数据类型 在局部可是查看全局作用域中的变量
 # 但是不能直接修改
 # 如果想要修改，需要在程序的一开始添加global声明
 # 如果在一个局部（函数）内声明了一个global变量，那么这个变量在局部的所有操作将对全局的变量有效
-a = 1
-b = 2
-def func():
-    x = 'aaa'
-    y = 'bbb'
-    print(locals())
-    print(globals())
-
-func()
-print(globals())
-print(locals()) #本地的
+# a = 1
+# b = 2
+# def func():
+#     x = 'aaa'
+#     y = 'bbb'
+#     print(locals())
+#     print(globals())
+#
+# func()
+# print(globals())
+# print(locals()) #本地的
 
 #globals 永远打印全局的名字
 #locals 输出什么 根据locals所在的位置
 
-a = 1
-def func(a):
-    a = 2
-    return a
-
-a = func(a)
-print(a)
-
-
+# a = 1
+# def func(a):
+#     a = 2
+#     return a
+#
+# a = func(a)
+# print(a)
 
 
+
+
+def func():
+    a = 12
+    b = 20
+    print(locals())
+    print(globals())
+
+func()
