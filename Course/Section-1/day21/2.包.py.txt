@@ -1,9 +1,9 @@
 # 把解决一类问题的模块放在同一个文件夹里 —— 包
-# import os
-# os.makedirs('glance/api')
-# os.makedirs('glance/cmd')
-# os.makedirs('glance/db')
-# l = []
+# # import os
+# # os.makedirs('glance/api')
+# # os.makedirs('glance/cmd')
+# # os.makedirs('glance/db')
+# # l = []
 # l.append(open('glance/__init__.py','w'))
 # l.append(open('glance/api/__init__.py','w'))
 # l.append(open('glance/api/policy.py','w'))
@@ -12,10 +12,10 @@
 # l.append(open('glance/cmd/manage.py','w'))
 # l.append(open('glance/db/models.py','w'))
 # map(lambda f:f.close() ,l)
-import sys
-import glance.api.policy as policy
-policy.get()
-print(sys.path)
+# import sys
+# import glance.api.policy as policy
+# policy.get()
+# print(sys.path)
 
 # from glance.api import policy
 # policy.get()
@@ -23,9 +23,9 @@ print(sys.path)
 # import sys
 # sys.path.insert(0,'C:\\Users\\Administrator\\PycharmProjects\\s9\\day21\\dir')
 # # print(sys.path)
-import glance
-glance.api.policy.get()
-glance.api.versions.create_resource()
+# import glance
+# glance.api.policy.get()
+# glance.api.versions.create_resource()
 # from dir import glance
 # glance.db.models.register_models('mysql')
 # glance.api.policy.get()
