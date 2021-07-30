@@ -91,18 +91,35 @@ import time
 #         pass
 #     return inner
 
-def wrapper(func):   #qqxing
-    def inner(*args,**kwargs):
-        ret = func(*args,**kwargs)   #被装饰的函数
-        return ret
-    return inner
-
-@wrapper        #qqxing = wrapper(qqxing)
-def qqxing():
-    print(123)
-
-ret = qqxing()   #inner
+# def wrapper(func):   #qqxing
+#     def inner(*args,**kwargs):
+#         ret = func(*args,**kwargs)   #被装饰的函数
+#         return ret
+#     return inner
+#
+# @wrapper        #qqxing = wrapper(qqxing)
+# def qqxing():
+#     print(123)
+#
+# ret = qqxing()   #inner
 
 #
 # 讲解元旦作业 扩展装饰器
 
+# import time
+#
+# def fun():
+#     print(time.time())
+#     time.sleep(10)
+#
+# def timer(f):
+#     def inner():
+#         start = time.time()
+#         f()
+#         end = time.time()
+#         result = end -start
+#         print(result)
+#     return inner
+#
+# func2 = timer(fun)
+# func2()

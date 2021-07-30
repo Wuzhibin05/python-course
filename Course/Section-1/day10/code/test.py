@@ -138,15 +138,60 @@
 # ############################################################################
 # ### 10,写函数，传入n个数，返回字典{‘max’:最大值,’min’:最小值}
 # 例如:min_max(2,5,7,8,4) 返回:{‘max’:8,’min’:2}(此题用到max(),min()内置函数)
+# def min_max(*args):
+#     dic1 = {}
+#     dic1["max"] = max(args)
+#     dic1["min"] = min(args)
+#     return dic1
+# ret = min_max(2,5,7,8,4)
+# print(ret)
 
 # ############################################################################
 # ### 11,写函数，传入一个参数n，返回n的阶乘
 # 例如:cal(7)  计算7*6*5*4*3*2*1
+# def cal(n):
+#     total = 1
+#     for i in range(1, n+1):
+#         print(i)
+#         total *= i
+#     return total
+# print(cal(7))
+
 
 # ############################################################################
 # ### 12写函数，返回一个扑克牌列表，里面有52项，每一项是一个元组（升级题）
 # 例如：[(‘红心’，2),(‘草花’，2), …(‘黑桃’，‘A’)]
-# 有如下函数:
+# def card():
+#     temp_list = []
+#     card = []
+#     for i in range(2, 11):
+#         temp_list.append(i)
+#         temp_list.extend(["J", "Q", "K", "A"])
+#     for i in temp_list:
+#         for card_type in ["黑桃", "红桃", "方块", "草花"]:
+#             a = (card_type, i)
+#             card.append(a)
+#     return card
+#
+# res = card()
+# print(res)、
+
+# def card():
+#     temp_list = []
+#     card_list = []
+#     for i in range(2,11):
+#         temp_list.append(i)
+#         temp_list.extend(["J", "Q", "K", "A"])
+#     for i in temp_list:
+#         for card_type in ["黑桃", "红桃", "方块", "草花"]:
+#             a = (card_type, i)
+#             card_list.append(a)
+#     return card_list
+# ret = card()
+# print(ret)
+
+
+# 13 有如下函数:
 # ```python
 # def wrapper():
 #         def inner():
@@ -156,3 +201,18 @@
 #
 # 你可以任意添加代码,用两种或以上的方法,执行inner函数.
 
+# 方法一
+# def wrapper():
+#     def inner():
+#         print(666)
+#     inner()
+# wrapper()
+
+# 方法二
+
+# def wrapper():
+#     def inner():
+#         print(666)
+#     return inner
+# ret = wrapper()
+# ret()

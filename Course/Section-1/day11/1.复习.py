@@ -22,30 +22,30 @@
 #     可以赋值、可以作为容器类型的元素、函数的参数和返回值 —— 第一类对象
 
 # 闭包 ： 内部函数使用外部函数的变量
-def outer():
-    a = 1
-    def inner():
-        print(a)
-    return inner
-
-i = outer()
-i()
+# def outer():
+#     a = 1
+#     def inner():
+#         print(a)
+#     return inner
+#
+# i = outer()
+# i()
 
 
 # 三目运算符（比较和y中较大的一个）
-x, y = 1, 4
-if (x>y):
-    print(x)
-else:
-    print(y)
-
-print(x if (x>y) else y)
+# x, y = 1, 4
+# if (x>y):
+#     print(x)
+# else:
+#     print(y)
+#
+# print(x if (x>y) else y)
 
 # 比较x y z 中较大的一个
-z = 10
-
-print((x if (x>y) else y) if ((x if (x>y) else y)>z) else z)
-
-
-a = (x if (x>y) else y)
-print(a if a>z else z)
+# z = 10
+#
+# print((x if (x>y) else y) if ((x if (x>y) else y)>z) else z)
+#
+#
+# a = (x if (x>y) else y)
+# print(a if a>z else z)
