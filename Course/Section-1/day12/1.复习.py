@@ -15,23 +15,26 @@
 # 装饰器的作用 ：在不改变原函数的调用方式的情况下，在函数的前后添加功能
 # 装饰器的本质 ： 闭包函数
 
-# def wrapper(func):
-#     def inner(*args,**kwargs):
-#         print('在被装饰的函数执行之前做的事')
-#         ret = func(*args,**kwargs)
-#         print('在被装饰的函数执行之后做的事')
-#         return ret
-#     return inner
-#
-# @wrapper   #holiday = wrapper(holiday)
-# def holiday(day):
-#     print('全体放假%s天'%day)
-#     return '好开心'
-#
-# ret = holiday(3)
-# print(ret)
+# 自行解释执行顺序
+def wrapper(func):
+    def inner(*args,**kwargs):
+        print('在被装饰的函数执行之前做的事')
+        ret = func(*args,**kwargs)
+        print('在被装饰的函数执行之后做的事')
+        return ret
+    return inner
 
+@wrapper   #holiday = wrapper(holiday)
+def holiday(day):
+    print('全体放假%s天'%day)
+    return '好开心'
 
+ret = holiday(3)
+print(ret)
+
+"""
+一松一紧,变化
+"""
 # def outer(*args):
 #     print(args)
 #     print(*args)

@@ -50,6 +50,7 @@ def card():
             card1.append(a)
     return card1
 print(card())
+
 #4，有如下函数:
 
 # def wrapper():

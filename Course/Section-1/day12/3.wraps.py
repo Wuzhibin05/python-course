@@ -1,6 +1,6 @@
-from functools import wraps
+from functools import wraps # 内置装饰器
 def wrapper(func):  #func = holiday
-    @wraps(func)
+    @wraps(func)  # 内置装饰器
     def inner(*args,**kwargs):
         print('在被装饰的函数执行之前做的事')
         ret = func(*args,**kwargs)
