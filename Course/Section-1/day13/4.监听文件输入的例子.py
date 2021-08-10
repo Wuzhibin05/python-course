@@ -1,3 +1,7 @@
+"""
+监听文件输入
+"""
+
 def tail(filename):
     f = open(filename,encoding='utf-8')
     while True:
@@ -8,4 +12,4 @@ def tail(filename):
 g = tail('file')
 for i in g:
     if 'python' in i:
-        print('***',i)
+        print('***', i)
