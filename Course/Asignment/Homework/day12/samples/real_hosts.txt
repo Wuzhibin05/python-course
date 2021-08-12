@@ -1,0 +1,21 @@
+# 一组组的编写，同组的用户名密码相同，如果出现一个主机属于多个组，则尽量避免有相同的用户名密码设置（比如root），如出现的话，以先添加的为准
+-   groupname: lab
+    auth_set :
+        -   user : root
+            password : new1234
+    hosts:
+        -   name: lab2
+            ip : 192.168.5.138
+            port : 22
+        -   name: lab3
+            ip : 192.168.5.142
+            port : 22
+
+-   groupname: production
+    auth_set:
+        -   user : coosh
+            key : C:\Users\Coosh\Documents\Identity
+    hosts:
+        -   name: lab1
+            ip : 192.168.5.41
+            port : 22

@@ -1,0 +1,25 @@
+# 一组组的编写，同组的用户名密码相同，
+# 如果出现一个主机属于多个组，则尽量避免有相同的用户名密码设置（比如root），如出现的话，以先添加的为准
+-   groupname: www
+    auth_set :
+        -   user : nginx
+            password : 789
+    hosts:
+        -   name: ubuntu
+            ip : 192.168.1.55
+            port : 22
+        -   name: www-mysql-1
+            ip : 192.168.5.102
+            port : 65222
+
+-   groupname: db
+    auth_set:
+        -   user : mysql
+            password : 123
+    hosts:
+        -   name: db-mysql-1
+            ip : 192.168.5.101
+            port : 22
+        -   name: www-mysql-1
+            ip : 192.168.5.102
+            port : 65222
