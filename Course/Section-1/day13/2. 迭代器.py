@@ -1,7 +1,15 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# __author__ = "wu zhi bin"
+# Email: wuzhibin05@163.com
+# Date: 2021/8/10
+
+
 # 双下方法
 # print([1].__add__([2]))
 # print([1]+[2])
 
+# ------------------------------------可以被循环--------------------------------------
 # 迭代器
 # l = [1,2,3]
 # 索引
@@ -24,6 +32,9 @@
 
 # -------------------------------------------------------------------------------------
 # print(dir([]))   # 告诉我列表拥有的所有方法
+# from collections import Iterable
+# for i in dir([]):
+#     print(i)
 # ret = set(dir([]))&set(dir({}))&set(dir(''))&set(dir(range(10)))
 # 双下方法，一般影藏代码中，一般不直接调用，python解释器内部处理
 # print(ret)  #iterable
@@ -57,8 +68,10 @@
 
 # print('__iter__' in dir( [].__iter__()))
 # print('__next__' in dir( [].__iter__()))
-from collections import Iterable
-from collections import Iterator
+
+# -------------------------------------判断是否可迭代------------------------------------------------
+# from collections import Iterable
+# from collections import Iterator
 # print(isinstance([],Iterator))
 # print(isinstance([],Iterable))
 
@@ -125,11 +138,11 @@ from collections import Iterator
 # 生成器 —— 迭代器
 # 生成器函数 —— 本质上就是我们自己写得函数
 # 生成器表达式
-l = [1,2,3,4,5]
-for i in l:
-    print(i)
-    if i == 2:
-        break
-
-for i in l:
-    print(i)
+# l = [1,2,3,4,5]
+# for i in l:
+#     print(i)
+#     if i == 2:
+#         break
+#
+# for i in l:
+#     print(i)

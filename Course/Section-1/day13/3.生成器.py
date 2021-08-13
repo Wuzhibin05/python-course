@@ -1,3 +1,8 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# __author__ = "wu zhi bin"
+# Email: wuzhibin05@163.com
+# Date: 2021/8/10
 
 """
 生成器函数
@@ -57,6 +62,21 @@ next 一个个循环，for全部循环。
 # print(g.__next__())
 # print(g1.__next__())
 
+
+def whaha():
+    for i in range(200):
+        yield "wahaha%s" % i
+
+
+g = whaha()
+count = 0
+for i in g:
+    count += 1
+    print(i)
+    if count > 50:
+        break
+# print('*******',g.__next__())
+# print('*******',g.__next__())
 # g = wahaha()
 # count = 0
 # for i in g:
