@@ -25,27 +25,33 @@
     # 第一次使用生成器的时候 是用next获取下一个值
     # 最后一个yield不能接受外部的值(下面没有生成内容)
 
-# 获取移动平均值
+"""
+获取移动平均值
+"""
+
 # 10 20 30 10
 # 10 15 20 17.5
 # avg = sum/count
-# def average():
-#     sum = 0
-#     count = 0
-#     avg = 0
-#     while True:
-#         num = yield avg
-#         sum += num    # 10
-#         count += 1    # 1
-#         avg = sum/count
-#
-# avg_g = average()
-# avg_g.__next__()
-# avg1 = avg_g.send(10)
-# avg1 = avg_g.send(20)
-# print(avg1)
+def average():
+    sum = 0
+    count = 0
+    avg = 0
+    while True:
+        num = yield avg
+        sum += num    # 10
+        count += 1    # 1
+        avg = sum/count
 
-#预激生成器的装饰器
+avg_g = average()
+avg_g.__next__()
+avg1 = avg_g.send(10)
+avg1 = avg_g.send(20)
+print(avg1)
+
+"""
+预激生成器的装饰器
+"""
+
 # def init(func):   #装饰器
 #     def inner(*args,**kwargs):
 #         g = func(*args,**kwargs)    #g = average()
@@ -95,7 +101,7 @@
 
 # 计算移动平均值的例子
 # 预激生成器的装饰器的例子
-# yield from
+# yield from 可迭代对象中，可以从容器中返回
 
 
 
