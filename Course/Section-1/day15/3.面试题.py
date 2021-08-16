@@ -1,16 +1,27 @@
-# def demo():
-#     for i in range(4):
-#         yield i
-#
-#
-# g = demo()
-#
-# g1 = (i for i in g)
-# g2 = (i for i in g1)
-#
-# print(list(g))
-# print(list(g1))
-# print(list(g2))
+
+"""
+面试题1
+1, g是调用生成器函数产生的生成器，一次性产生了多个值的列表。
+2, g1对生成器g
+"""
+def demo():
+    for i in range(4):
+        yield i
+
+
+g = demo()
+g1 = (i for i in g)
+g2 = (i for i in g1)
+
+print(type(g))
+print(type(g1))
+print(type(g2))
+print(list(g))
+print(list(g1))
+print(list(g2))
+
+
+
 
 # def add(n,i):
 #     return n+i

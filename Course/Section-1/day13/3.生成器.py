@@ -75,8 +75,8 @@ for i in g:
     print(i)
     if count > 50:
         break
-# print('*******',g.__next__())
-# print('*******',g.__next__())
+print('*******',g.__next__())
+print('*******',g.__next__())
 # g = wahaha()
 # count = 0
 # for i in g:
