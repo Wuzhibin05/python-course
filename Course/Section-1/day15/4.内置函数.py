@@ -1,23 +1,29 @@
-# print()
-# input()
-# len()
-# type()
-# open()
-# tuple()
-# list()
-# int()
-# bool()
-# set()
-# dir()
-# id()
-# str()
-# l =[]
-a = 1
+
+"""
+1，常见
+print() 打印
+input() 输入
+len()  计算长度
+type() 查询类型
+open()  打开文件
+tuple()  元祖
+list()  列表
+int()  整形转换
+bool()  bool转换
+set()  集合转换
+dir()  列出方法
+id()  查询内存地址
+str()  转换列表
+l =[]
+"""
+
+"""
 # 返回本地作用域中的所有的人的名字
-# print(locals()) #返回本地作用域中的所有名字
+print(locals()) #返回本地作用域中的所有名字
 print(globals())#返回全局作用域中的所有名字
-# global 变量
-# nonlocal 变量
+global 变量
+nonlocal 变量
+"""
 
 #迭代器.__next__()
 # next(迭代器)
@@ -55,8 +61,8 @@ import time
 # print(f.readable())
 
 #id
-#hash - 对于相同可hash数据的hash值在一次程序的执行过程中总是不变的
-#     - 字典的寻址方式
+# hash - 对于相同可hash数据的hash值在一次程序的执行过程中总是不变的
+#     - 字典的寻址方式，通过key找到value,key必须可hash且为不可变数据类型。
 # print(hash(12345))
 # print(hash('hsgda不想你走，nklgkds'))
 # print(hash(('1','aaa')))
@@ -65,8 +71,8 @@ import time
 # ret = input('提示 ： ')
 # print(ret)
 
-# print('我们的祖国是花园',end='')  #指定输出的结束符
-# print('我们的祖国是花园',end='')
+print('我们的祖国是花园',end='')  #指定输出的结束符
+print('我们的祖国是花园',end='')
 # print(1,2,3,4,5,sep='|') #指定输出多个值之间的分隔符
 # f = open('file','w')
 # print('aaaa',file=f)
@@ -79,12 +85,12 @@ for i in range(0,101,2):
      per_str = '\r%s%% : %s\n' % (i, '*' * char_num) \
          if i == 100 else '\r%s%% : %s' % (i,'*'*char_num)
      print(per_str,end='', flush=True)
-#progress Bar
+#progress Bar #进度条函数
 
 # exec('print(123)')
 # eval('print(123)')
 # print(eval('1+2+3+4'))   # 有返回值
-# print(exec('1+2+3+4'))   #没有返回值
+# print(exec('1+2+3+4'))   # 没有返回值
 # exec和eval都可以执行 字符串类型的代码
 # eval有返回值  —— 有结果的简单计算
 # exec没有返回值   —— 简单流程控制
