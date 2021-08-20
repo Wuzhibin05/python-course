@@ -1,8 +1,8 @@
 # reversed()
-# l = [1,2,3,4,5]
+# l = [1, 2, 3, 4, 5]
 # l.reverse()
 # print(l)
-# l = [1,2,3,4,5]
+# l = [1, 2, 3, 4, 5]
 # l2 = reversed(l)
 # print(l2)
 # 保留原列表，返回一个反向的迭代器
@@ -16,14 +16,14 @@
 # print(format('test', '>40'))
 # print(format('test', '^40'))
 
-#bytes 转换成bytes类型
+# bytes 转换成bytes类型
 # 我拿到的是gbk编码的，我想转成utf-8编码
 # print(bytes('你好',encoding='GBK'))     # unicode转换成GBK的bytes
 # print(bytes('你好',encoding='utf-8'))   # unicode转换成utf-8的bytes
 
-# 网络编程 只能传二进制
-# 照片和视频也是以二进制存储
-# html网页爬取到的也是编码
+# 网络编程 只能传二进制 byte
+# 照片和视频也是以二进制存储 byte
+# html网页爬取到的也是编码 byte
 # b_array = bytearray('你好',encoding='utf-8')
 # print(b_array)
 # print(b_array[0])
@@ -33,6 +33,7 @@
 
 # l = 'ahfjskjlyhtgeoahwkvnadlnv'
 # l2 = l[:10]
+# print(l2)
 
 # 切片 —— 字节类型  不占内存
 # 字节 —— 字符串 占内存
@@ -74,6 +75,14 @@
 #     print(i)
 # [i for i in [1, 4, 6, 7, 9, 12, 17] if i % 2 == 1]
 
+
+# def is_odd(x):
+#     return x % 2 == 0
+#
+#
+# ret = filter(is_odd, [1, 3, 5, 43, 43, 3, 8, 3, 10])
+# for i in ret:
+#     print(i)
 # from math import sqrt
 # def func(num):
 #     res = sqrt(num)
@@ -87,12 +96,17 @@
 # print(ret)
 # for i in ret:
 #     print(i)
-
+l =[1,123,"a","b",4,19,]
+dict={1:100,2:200}
+# l.sort()
+# print(l)
+# for index,i in enumerate(dict):
+#     print(index,i)
 
 # filter 执行了filter之后的结果集合 <= 执行之前的个数
-        #filter只管筛选，不会改变原来的值
+# filter只管筛选，不会改变原来的值
 # map 执行前后元素个数不变
-      # 值可能发生改变
+# 值可能发生改变
 
 # l = [1,-4,6,5,-10]
 # # l.sort(key = abs)   # 在原列表的基础上进行排序
@@ -101,9 +115,7 @@
 # print(sorted(l,key=abs,reverse=True))      # 生成了一个新列表 不改变原列表 占内存
 # print(l)
 
-# l = ['   ',[1,2],'hello world']
-# new_l = sorted(l,key=len)
-# print(new_l)
-
-
-
+# --------------------------------------根据列表长度排序--------------------------------------
+l = ['   ',[1,2],'hello world']
+new_l = sorted(l,key=len)
+print(new_l)

@@ -25,7 +25,7 @@ global 变量
 nonlocal 变量
 """
 
-#迭代器.__next__()
+# 迭代器.__next__()
 # next(迭代器)
 # 迭代器 = iter(可迭代的)
 # 迭代器 = 可迭代的.__iter__()
@@ -49,7 +49,6 @@ nonlocal 变量
 # def func():pass
 # print(callable(func))
 
-import time
 # t = __import__('time')
 # print(t.time())
 
@@ -60,7 +59,7 @@ import time
 # print(f.writable())
 # print(f.readable())
 
-#id
+# id
 # hash - 对于相同可hash数据的hash值在一次程序的执行过程中总是不变的
 #     - 字典的寻址方式，通过key找到value,key必须可hash且为不可变数据类型。
 # print(hash(12345))
@@ -71,21 +70,22 @@ import time
 # ret = input('提示 ： ')
 # print(ret)
 
-print('我们的祖国是花园',end='')  #指定输出的结束符
-print('我们的祖国是花园',end='')
+import time
+print('我们的祖国是花园', end='')  # 指定输出的结束符
+print('我们的祖国是花园', end='')
 # print(1,2,3,4,5,sep='|') #指定输出多个值之间的分隔符
 # f = open('file','w')
 # print('aaaa',file=f)
 # f.close()
 
-import time
-for i in range(0,101,2):
-     time.sleep(0.1)
-     char_num = i//2
-     per_str = '\r%s%% : %s\n' % (i, '*' * char_num) \
-         if i == 100 else '\r%s%% : %s' % (i,'*'*char_num)
-     print(per_str,end='', flush=True)
-#progress Bar #进度条函数
+# 进度条
+for i in range(0, 101, 2):
+    time.sleep(0.1)
+    char_num = i // 2
+    per_str = '\r%s%% : %s\n' % (i, '*' * char_num) \
+        if i == 100 else '\r%s%% : %s' % (i, '*' * char_num)
+    print(per_str, end='', flush=True)
+# progress Bar #进度条函数
 
 # exec('print(123)')
 # eval('print(123)')
@@ -126,7 +126,7 @@ for i in range(0,101,2):
 
 # 浮点数（有限循环小数，无限循环小数）  != 小数 ：有限循环小数，无限循环小数，无限不循环小数
 # 浮点数
-    #354.123 = 3.54123*10**2 = 35.4123 * 10
+   # 354.123 = 3.54123*10**2 = 35.4123 * 10
 # f = 1.781326913750135970
 # print(f)
 
@@ -152,13 +152,12 @@ for i in range(0,101,2):
 # ret = sum([1,2,3,4,5,6,10],)
 # print(ret)
 
-# print(min([1,2,3,4]))
-# print(min(1,2,3,4))
-# print(min(1,2,3,-4))
-# print(min(1,2,3,-4,key = abs))
+print(min([1, 2, 3, 4]))
+print(min(1, 2, 3, 4))
+print(min(1, 2, 3, -4))
+print(min(1, 2, 3, -4, key=abs))
 #
 # print(max([1,2,3,4]))
 # print(max(1,2,3,4))
 # print(max(1,2,3,-4))
 # print(max(1,2,3,-4,key = abs))
-
