@@ -2,7 +2,6 @@
 # 数据结构 : dict list tuple set str
 
 
-
 # print(eval('1+2+3'))
 #
 # code1 = 'for i in range(10):print(i)'
@@ -27,6 +26,8 @@
 
 import math
 
+
 def is_sqrt(x):
     return math.sqrt(x) % 2 == 0
-print(list(filter(is_sqrt,range(1,101))))
+
+print(list(filter(is_sqrt, range(1, 101))))
